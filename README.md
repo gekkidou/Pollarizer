@@ -1,4 +1,4 @@
-# algo-vue
+# Pollarizer
 
 ## Project setup
 ```
