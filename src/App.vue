@@ -1,19 +1,53 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SandBox />
+
+<body>
+	<form>
+        <p style="font-size:40px">Pollarizer</p>
+        <p style="font-size:15px">Question of the day:</p>
+        How many people are needed to change a lamp?<br><br>
+
+    <div>
+        <input type="radio" id="1" name="option" value="A"
+               checked>
+        <label for="huey">1</label>
+      </div>
+      
+      <div>
+        <input type="radio" id="2" name="option" value="B">
+        <label for="dewey">5</label>
+      </div>
+      
+      <div>
+        <input type="radio" id="3" name="option" value="C">
+        <label for="louie">0</label>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+
+    <pre id="log">
+    </pre>
+
+</body>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SandBox from './components/SandBox.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SandBox
   }
 }
+
 </script>
 
 <style>
